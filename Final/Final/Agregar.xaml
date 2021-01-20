@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Final.Agregar">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Nombre" />
+            <Entry x:Name="descripcion"  
+               Placeholder="Ingrese nombre de Producto"/>
+
+            <Label Text="Precio" />
+            <Entry x:Name="precio"
+               Placeholder="Ingrese Precio" Keyboard="Telephone" />
+            <StackLayout Orientation="Horizontal" Margin="0,50,0,0" HorizontalOptions="Center">
+                <Button Grid.Row="0" Text="Cancelar" Clicked="CancelarClicked" BorderWidth="1" FontAttributes="Bold" BackgroundColor="Red" BorderRadius="10" TextColor="White" HorizontalOptions="Center" WidthRequest="160" HeightRequest="70" Margin="0,0,20,22" VerticalOptions="End"/>
+
+                <Button Grid.Row="0"   Text="Agregar" Clicked="AgregarClicked"    BorderWidth="1" FontAttributes="Bold" BackgroundColor="DarkBlue" BorderRadius="10" TextColor="White" HorizontalOptions="Center" WidthRequest="160" HeightRequest="70" Margin="0,0,20,22" VerticalOptions="End"/>
+                
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
